@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="mapView" destination="7LV-1q-zzC" id="kuf-mS-9yW"/>
+                <outlet property="tableView" destination="5p6-xj-aK2" id="4ZA-x3-DhO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-1q-zzC" customClass="YelpMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5p6-xj-aK2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5p6-xj-aK2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bu4-vz-5wT"/>
+                <constraint firstAttribute="bottom" secondItem="5p6-xj-aK2" secondAttribute="bottom" id="Ikr-C8-Goi"/>
+                <constraint firstItem="5p6-xj-aK2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PFU-a0-sUr"/>
+                <constraint firstAttribute="bottom" secondItem="7LV-1q-zzC" secondAttribute="bottom" id="UMM-M3-wc9"/>
+                <constraint firstAttribute="trailing" secondItem="7LV-1q-zzC" secondAttribute="trailing" id="YuR-34-SDk"/>
+                <constraint firstAttribute="trailing" secondItem="5p6-xj-aK2" secondAttribute="trailing" id="aTG-BR-bPX"/>
+                <constraint firstItem="7LV-1q-zzC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hHF-u8-XDY"/>
+                <constraint firstItem="7LV-1q-zzC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mSl-nu-9hA"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
